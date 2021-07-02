@@ -12,7 +12,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:iamandrewluca/vue-use-dropzone.git"
+    "url": "https://github.com/iamandrewluca/vue-use-dropzone"
   },
   "types": "lib/index.ts",
   "files": [
