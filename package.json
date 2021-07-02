@@ -1,11 +1,14 @@
 {
-  "version": "0.0.0",
+  "version": "0.1.0",
   "name": "vue-use-dropzone",
   "license": "MIT",
   "main": "dist/vue-use-dropzone.umd.js",
   "module": "dist/vue-use-dropzone.es.js",
   "types": "lib/index.ts",
-  "files": ["lib", "dist"],
+  "files": [
+    "lib",
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
