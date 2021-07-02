@@ -22,7 +22,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "prepare": "yarn build",
+    "release": "np"
   },
   "dependencies": {
     "attr-accept": "^2.2.2",
@@ -44,6 +46,7 @@
     "@vue/compiler-sfc": "^3.0.5",
     "@vue/runtime-dom": "^3.1.1",
     "autoprefixer": "^10.2.6",
+    "np": "^7.5.0",
     "postcss": "^8.3.4",
     "prettier": "^2.3.1",
     "tailwindcss": "^2.1.4",
