@@ -4,6 +4,16 @@
   "license": "MIT",
   "main": "dist/vue-use-dropzone.umd.js",
   "module": "dist/vue-use-dropzone.es.js",
+  "keywords": [
+    "vue",
+    "dropzone",
+    "composition api",
+    "hooks"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:iamandrewluca/vue-use-dropzone.git"
+  },
   "types": "lib/index.ts",
   "files": [
     "lib",
