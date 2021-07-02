@@ -24,7 +24,7 @@
     "build": "vue-tsc --noEmit && vite build",
     "serve": "vite preview",
     "prepare": "yarn build",
-    "release": "np"
+    "release": "npx np"
   },
   "dependencies": {
     "attr-accept": "^2.2.2",

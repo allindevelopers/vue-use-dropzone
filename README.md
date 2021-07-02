@@ -1,3 +1,45 @@
+# vue-use-dropzone
+
+This is a vue implementation of [`react-dropzone`](https://github.com/react-dropzone/react-dropzone)  
+[Documentation](https://react-dropzone.js.org/) is more or less identical  
+This was created as an experiment, if anyone is more interested in this library, feel free to contact me.
+
+```shell
+npm install vue-use-dropzone
+```
+
+### Example
+
+```vue
+<template>
+  <section>
+    <div v-bind="getRootProps()">
+      <input v-bind="getInputProps()" />
+      <p>Drag 'n' drop some files here, or click to select files</p>
+    </div>
+    <ul>
+      <li v-for="file in acceptedFiles" :key="file.path">
+        {{ file.path }} - {{ file.size }} bytes
+      </li>
+    </ul>
+  </section>
+</template>
+
+<script lang="ts">
+import { defineComponent } from "vue-demi";
+import { useDropzone } from 'vue-use-dropzone';
+
+export default defineComponent({
+  setup() {
+    const { acceptedFiles, getRootProps, getInputProps } = useDropzone();
+    return { acceptedFiles, getRootProps, getInputProps };
+  },
+});
+</script>
+
+```
+
+
 # Vue 3 + Typescript + Vite
 
 This template should help get you started developing with Vue 3 and Typescript in Vite.
